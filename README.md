@@ -411,7 +411,8 @@ Obsidian will open it. **It'll be empty — that's correct.** Part 5 creates the
 > ├── Concepts/     one note per idea
 > ├── Methods/      procedures you execute rather than explain
 > ├── Sources/      what you learned it from
-> ├── Maps/         per-subject index notes
+> ├── Maps/         per-subject index notes, and a map per textbook
+> ├── Library/      source PDFs — textbooks, papers
 > ├── Sessions/     a log per session
 > └── Templates/    the note skeletons
 > ```
@@ -632,7 +633,8 @@ Brain/
 ├── Concepts/     # one note per idea — your words, your errors, your click-moments
 ├── Methods/      # procedures you execute rather than explain
 ├── Sources/      # what you learned it from
-├── Maps/         # per-subject index notes
+├── Maps/         # per-subject index notes, and a map per textbook
+├── Library/      # source PDFs — read by page range, never whole
 ├── Sessions/     # a log per session: what stuck, what didn't, where you stopped
 └── Templates/    # the note skeletons
 ```

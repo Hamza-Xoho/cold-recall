@@ -24,6 +24,28 @@ Fine — name the subject and topic and say so:
 Chemistry, no source folder, just the topic: Le Chatelier's principle
 ```
 
+### Studying from a textbook PDF
+
+Put the PDF in `Library/` inside your vault. Then, **the first time only**, say:
+
+```
+map Avery Oral Histology
+```
+
+That session builds a navigation map — sections with page ranges — and stops there. No teaching. It takes a few minutes and you only do it once per book.
+
+After that, open sessions by naming the section:
+
+```
+Dentistry, Avery Oral Histology, Ch12 §3 — Enamel Formation
+```
+
+The session reads only those pages. Nothing is split, converted, or pre-processed — the PDF stays exactly as it is and gets read in place.
+
+**Why sections and not chapters.** A chapter is 40–60 pages; a session's worth of material is 4–10. Feeding a whole chapter to teach one section wastes most of your conversation length on pages you won't touch, and long chats degrade as context fills.
+
+**If your PDF is a scan.** Many textbook PDFs — especially photocopied ones — are images with no text layer, and nothing can read them. Test yours: open it and try to select a sentence with your cursor. If you can't, the file needs OCR first ([ocrmypdf](https://ocrmypdf.readthedocs.io) is the free tool). A session pointed at a scan will say so and stop rather than guess at the contents.
+
 ### Not sure what to study?
 
 ```

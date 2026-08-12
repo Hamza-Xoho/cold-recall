@@ -12,6 +12,9 @@ desktop.ini
 *.swp
 *~
 
+# Agent scratch state
+.claude-flow/
+
 # Obsidian workspace state, if anyone vaults inside the repo
 .obsidian/workspace*
 .obsidian/cache

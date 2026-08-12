@@ -138,7 +138,7 @@ ok "Vault will be: ${BOLD}$VAULT_NATIVE${RESET}"
 
 # ── 2. Build the vault ───────────────────────────────────────────────────────
 hdr "2. Creating vault folders"
-for d in Concepts Methods Sources Maps Sessions Templates; do
+for d in Concepts Methods Sources Maps Sessions Templates Library; do
   if [ -d "$VAULT_PATH/$d" ]; then
     say "  ${DIM}exists${RESET}  $d/"
   else
@@ -147,7 +147,7 @@ for d in Concepts Methods Sources Maps Sessions Templates; do
   fi
 done
 
-for t in concept session; do
+for t in concept session textbook-map; do
   src="$REPO_DIR/vault-template/Templates/$t.md"
   dst="$VAULT_PATH/Templates/$t.md"
   [ -f "$src" ] || die "Missing $src — are you running this from inside the repo?"
@@ -158,6 +158,23 @@ for t in concept session; do
     say "  ${GREEN}created${RESET} Templates/$t.md"
   fi
 done
+
+# Library/ holds source PDFs. Textbooks are large, binary and replaceable; a 90 MB
+# file committed once lives in git history forever, and GitHub hard-rejects >100 MB.
+if [ ! -f "$VAULT_PATH/.gitignore" ]; then
+  cat > "$VAULT_PATH/.gitignore" <<'VAULTIGNORE'
+# Source PDFs — large, binary, replaceable. Never in git history.
+Library/
+
+# Obsidian per-machine state
+.obsidian/workspace*
+.obsidian/cache
+
+.DS_Store
+VAULTIGNORE
+  say "  ${GREEN}created${RESET} .gitignore ${DIM}(keeps Library/ PDFs out of git)${RESET}"
+fi
+
 ok "Vault ready."
 
 # ── 3. Point the skills at the vault ─────────────────────────────────────────

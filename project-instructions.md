@@ -21,7 +21,11 @@ The vault lives at `__VAULT_PATH__`. It is the point of the project. Sessions se
 
 ## 3. How to start a session
 
-Open a chat here and name **(a) the subject, (b) the specific material for today, and (c) the resource folder** — e.g. "Biology, `~/Resources/Bio/Topic 1`, Molecules of Life." That single message is all it takes; the `learning` skill fires on it and reads its own procedure before teaching. There is no separate activation step, and I do not have to ask for flashcards — the session makes them itself when genuine must-know atoms come up (see §5). Name the material as specifically as possible — the narrower the pointer, the better the read-back and the material diagnosis work.
+Open a chat here and name **(a) the subject, (b) the specific material for today, and (c) where it lives** — e.g. "Biology, `~/Resources/Bio/Topic 1`, Molecules of Life." That single message is all it takes; the `learning` skill fires on it and reads its own procedure before teaching. There is no separate activation step, and I do not have to ask for flashcards — the session makes them itself when genuine must-know atoms come up (see §5). Name the material as specifically as possible — the narrower the pointer, the better the read-back and the material diagnosis work.
+
+**Working from a textbook PDF.** Put the PDF in `Library/` inside the vault, then open with the chapter and section: "Dentistry, Avery Oral Histology, Ch12 §3 — Enamel Formation". The session reads only those pages, in place — nothing is split, converted, or pre-processed.
+
+**First time with any book, say only: "map Avery Oral Histology".** That session builds the navigation map — sections with page ranges — and stops there. Teaching starts the session after. If the PDF is a scan with no text layer, the session will say so and stop; it needs OCR before this system can read it.
 
 ## 4. The Standing Loop (run every session)
 
