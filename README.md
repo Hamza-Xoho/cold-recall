@@ -511,7 +511,7 @@ Paste it in whichever form you copied it — `C:\Users\...` and `/c/Users/...` a
 
 ### What it does
 
-- creates the six vault folders and the note templates inside your `Brain` folder
+- creates the seven vault folders and the note templates inside your `Brain` folder
 - writes your real path into personalised copies of the skills and project instructions, in a new `build/` folder
 - zips the two skills so they're ready to upload in Part 6
 - checks your work from Parts 2–4 and tells you what's still missing
@@ -519,12 +519,12 @@ Paste it in whichever form you copied it — `C:\Users\...` and `/c/Users/...` a
 
 **Read the summary it prints at the end.** It lists exactly what's left, with your real paths filled in, and flags anything you skipped earlier.
 
-**Switch to Obsidian now.** The six folders should have appeared in the sidebar. If they have, Parts 2, 3 and 5 all worked.
+**Switch to Obsidian now.** The seven folders should have appeared in the sidebar. If they have, Parts 2, 3 and 5 all worked.
 
 <details>
 <summary><b>Doing it by hand instead of running the script</b></summary>
 
-Create those six folders yourself, copy `vault-template/Templates/concept.md` and `session.md` into `Templates/`, then open `skills/learning/SKILL.md`, `skills/anki/SKILL.md` and `project-instructions.md` and replace every `__VAULT_PATH__` with your vault's **full, absolute** path. Four occurrences in total.
+Create those seven folders yourself, copy `concept.md`, `session.md` and `textbook-map.md` from `vault-template/Templates/` into your vault's `Templates/`, then open `skills/learning/SKILL.md`, `skills/anki/SKILL.md` and `project-instructions.md` and replace every `__VAULT_PATH__` with your vault's **full, absolute** path. Four occurrences in total.
 
 </details>
 

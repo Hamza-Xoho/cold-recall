@@ -82,7 +82,7 @@ Remove `exam_weight` from `vault-template/Templates/concept.md` and delete the f
 <details>
 <summary><b>Change the folder layout</b></summary>
 
-Update the **Folders** line in `skills/learning/SKILL.md` and rename the folders in your vault. Keep `Templates/` — the skill reads `concept.md` and `session.md` from it.
+Update the **Folders** line in `skills/learning/SKILL.md` and rename the folders in your vault. Keep `Templates/` — the skill reads `concept.md`, `session.md` and `textbook-map.md` from it.
 
 </details>
 
@@ -114,4 +114,4 @@ Nothing here is Obsidian-specific except `[[wikilinks]]`. Logseq handles them na
 
 ## If you change something that works well
 
-Please [open a PR or issue](../../issues) — especially subject-specific adaptations. The pedagogy is generic in principle, but only real sessions in untested subjects will show where it isn't.
+Please [open a PR or issue](https://github.com/Hamza-Xoho/cold-recall/issues) — especially subject-specific adaptations. The pedagogy is generic in principle, but only real sessions in untested subjects will show where it isn't.
