@@ -115,4 +115,4 @@ If you want a genuinely different standard, edit the status ladder in `skills/le
 
 ## Still stuck?
 
-[Open an issue](../../issues) with: your OS, which Claude surface (Desktop/Code/web), what you expected, what happened, and the relevant chunk of your config with personal paths removed.
+[Open an issue](https://github.com/Hamza-Xoho/cold-recall/issues) with: your OS, which Claude surface (Desktop/Code/web), what you expected, what happened, and the relevant chunk of your config with personal paths removed.

@@ -1,20 +1,26 @@
 ---
 type: concept            # concept | method
-subject:
+subject: ""
 status: learning         # seen | learning | solid | mastered
 confidence: 1            # 1–5, honest — earned by unaided retrieval only
-tags: []                 # cross-domain connective tissue
-first_learned:
-last_reviewed:           # any contact, including a re-read
-last_unaided:            # last cold, UNAIDED pass — the ONLY thing that earns/renews status
-review_due:
+tags: []                 # lowercase-hyphenated single tokens only — no spaces
+first_learned: ""
+last_reviewed: ""        # any contact, including a re-read
+last_unaided: ""         # last cold, UNAIDED pass — the ONLY thing that earns/renews status
+review_due: ""
+source_ref: ""           # e.g. "Ch12 §3, PDF pp. 253–265" — where in the source this came from
 sources: []
 sessions: []
-prerequisites: []        # foundations this rests on — INCLUDING unresolved [[links]] to unstudied concepts
+prerequisites: []        # foundations this rests on — INCLUDING unresolved links to unstudied concepts
 related: []              # cross-subject links and downstream topics
-anki:                    # optional: deck/tag, only when this concept leans on a specific atom set
+anki: ""                 # optional: deck/tag, only when this concept leans on a specific atom set
 exam_weight:             # optional: drop this field if you're not studying for an exam
 ---
+
+<!-- YAML: every wikilink in frontmatter must be a QUOTED string.
+     Correct:   prerequisites: ["[[Electronegativity]]"]
+     Broken:    prerequisites: [[Electronegativity]]     <- a nested list, not a link
+     Quote any value containing a colon, #, em dash, or a leading [ . -->
 
 # {{title}}
 
